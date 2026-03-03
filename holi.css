@@ -1,0 +1,196 @@
+/* ================= BODY DESIGN ================= */
+body{
+    margin:0;
+    padding:0;
+
+    /* Font change karna ho toh yaha change karo */
+    font-family: Arial, sans-serif;
+
+    /* Background gradient color yaha se change karo */
+    background: linear-gradient(45deg,#ff416c,#ff4b2b,#ff9a9e);
+
+    color:white;
+    text-align:center;
+
+    /* Horizontal scroll remove */
+    overflow-x:hidden;
+}
+
+
+/* ================= NAVBAR DESIGN ================= */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+
+    /* Navbar background transparency */
+    background:rgba(0,0,0,0.3);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:rgb(15, 220, 193);
+    font-weight:bold;
+}
+
+
+/* ================= HERO SECTION ================= */
+.hero{
+    #home {
+    scroll-margin-top: 80px;
+}   /* Upar se gap */
+}
+/* ===== Holi Quiz Section Styling ===== */
+.quiz-section {
+    padding: 20px;
+    background: #81042d;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.option-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #FFD700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.option-btn:hover {
+    transform: scale(1.1);
+    background: #FFA500;
+}
+
+#nextBtn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6A5ACD;
+    margin-top: 20px;
+}
+
+/* Optional: Smooth scroll for nav */
+html { scroll-behavior: smooth; }
+
+
+/* ================= BUTTON DESIGN ================= */
+button{
+    padding:10px 20px;
+
+    border:none;
+    border-radius:20px;
+
+    background:rgb(34, 5, 176);
+    color:#ff418a;
+
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-section {
+    padding: 40px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background: #f305a3;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-section input {
+    padding: 10px;
+    width: 80%;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #dc0b0b;
+    font-size: 16px;
+}
+
+.login-section button {
+    padding: 10px 25px;
+    background: #FF6F61;
+    color: rgb(195, 16, 16);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-section button:hover {
+    background: #c8ef04;
+}
+
+/* Smooth scroll for navigation */
+html { scroll-behavior: smooth; }
+/* ================= GULAL PARTICLES ================= */
+.gulal{
+    position:absolute;
+
+    width:15px;     /* Size change karna ho toh yaha karo */
+    height:15px;
+
+    border-radius:50%;
+
+    animation: fall linear infinite;
+}
+/* ===== WEBSITE FOOTER ===== */
+.footer {
+    text-align: center;             /* Center me text */
+    padding: 20px;                  /* Thoda spacing */
+    background-color: #FFFAE3;      /* Light festive background */
+    color: #333;                    /* Text color */
+    border-top: 1px solid #ccc;     /* Top border */
+    font-size: 16px;                /* Font size */
+    font-style: italic;             /* Italic style */
+    margin-top: 50px;               /* Upar spacing */
+}
+.footer strong {
+    color: #FF4500;                 /* Naam ko alag color */
+}
+
+/* ================= GULAL FALL ANIMATION ================= */
+@keyframes fall{
+
+    /* Animation start position */
+    0%{
+        transform:translateY(-50px);
+        opacity:1;
+    }
+
+    /* Animation end position */
+    100%{
+        transform:translateY(800px);
+        opacity:0;
+    }
+}
